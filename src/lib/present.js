@@ -8,27 +8,11 @@ function present (allClips, options = {}) {
   const { cwd } = options
   return allClips.map((clip) => {
     if (clip.type === 'text') {
-      const isHexColor = clip.raw.match(/^#([0-9a-f]{3}){1,2}$/i)
       const response = {
         title: clip.raw,
         subtitle: `${ago(new Date(clip.createdAt))}, ${clip.raw.length} characters`,
         value: clip._id,
         id: clip._id,
-        preview: `
-          <pre class="text">${htmlEncode(clip.raw)}</pre>
-        `,
-      }
-      if (isHexColor) {
-        const color = Color(clip.raw)
-        const colorType = color.isDark() ? 'dark' : 'light'
-        response.preview = `
-          <pre
-            class="text color ${colorType}"
-            style="background-color: ${clip.raw};"
-          >
-            ${clip.raw}
-          </pre>
-        `
       }
       return response
     } else if (clip.type === 'image') {
@@ -49,9 +33,7 @@ function present (allClips, options = {}) {
         subtitle: ago(new Date(clip.createdAt)),
         id: clip._id,
         value: clip._id,
-        preview: `
-          <img src="${imageSrc}" />
-        `,
+        imgSrc: imageSrc,
       }
     }
   })
