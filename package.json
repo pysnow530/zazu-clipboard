@@ -4,10 +4,10 @@
   "description": "A clipboard manager for Zazu.",
   "main": "monitor.js",
   "dependencies": {
-    "color": "^3.1.1",
+    "color": "^4.2.3",
     "js-htmlencode": "^0.3.0",
     "nestdb": "^2.0.0",
-    "s-ago": "^2.0.1"
+    "s-ago": "^2.2.0"
   },
   "scripts": {
     "lint": "eslint . --fix",
@@ -32,15 +32,15 @@
   },
   "homepage": "https://github.com/tinytacoteam/zazu-clipboard#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^5.16.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^9.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "mocha": "^6.1.4",
-    "rimraf": "^2.6.3"
+    "chai": "^4.3.10",
+    "eslint": "^8.53.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "mocha": "^10.2.0",
+    "rimraf": "^5.0.5"
   },
   "peerDependencies": {
     "electron": "^5.0.1"
