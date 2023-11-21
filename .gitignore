@@ -2,3 +2,4 @@ node_modules
 *.nedb
 data
 .*.un~
+.DS_Store

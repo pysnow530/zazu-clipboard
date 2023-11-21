@@ -15,7 +15,7 @@
         "id": "ClipboardKey",
         "name": "ClipboardKey",
         "type": "Hotkey",
-        "hotkey": "alt+shift+v",
+        "hotkey": "cmd+shift+v",
         "connections": [
           "searcher"
         ]
